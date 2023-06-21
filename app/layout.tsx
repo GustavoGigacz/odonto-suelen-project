@@ -1,3 +1,4 @@
+import Navbar from "./components/Navbar/Navbar";
 import "./globals.css";
 import { Archivo, Roboto } from "next/font/google";
 
@@ -27,7 +28,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${roboto.className} ${archivo.className}`}>
+      <body className={`${roboto.className} ${archivo.className} pt-[84px]`}>
+        <Navbar />
         {children}
       </body>
     </html>
