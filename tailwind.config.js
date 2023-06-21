@@ -10,7 +10,13 @@ module.exports = {
       colors: {
         background: "#ffffff",
         foreground: "#800020",
+        foreground2: "#FFE5EC",
         primary: "#800121",
+        font1: "#132030",
+        font2: "#fff",
+      },
+      maxWidth: {
+        desktop: "1512px",
       },
     },
   },
