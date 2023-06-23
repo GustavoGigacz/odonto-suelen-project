@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className='w-full fixed top-0'>
+      <nav className='w-full fixed top-0 mb-8'>
         {/* navbar desktop */}
         <ul className='px-8 mobile:flex mobile:max-w-desktop mobile:mx-auto mobile:text-font1 mobile:text-2xl hidden'>
           <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-foreground2 hover:border-b-4 hover:border-y-foreground transition-all'>
@@ -75,10 +75,13 @@ export default function Navbar() {
               duration: 0.2,
             }}
           >
-            <button onClick={toggleMenu} className='ml-auto mt-9 mr-8'>
+            <button
+              onClick={toggleMenu}
+              className='ml-auto mt-9 mr-8 mb-[-68px] z-10'
+            >
               <CloseIcon />
             </button>
-            <div>
+            <div className='flex flex-col justify-center h-full'>
               <ul className='flex flex-col text-5xl gap-4 leading-[125%]'>
                 <motion.li
                   initial={{
