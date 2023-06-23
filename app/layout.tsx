@@ -3,6 +3,7 @@ import "./globals.css";
 import { Archivo, Roboto } from "next/font/google";
 
 export const roboto = Roboto({
+  variable: "--roboto",
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "700", "900"], // regular, medium, bold, black
@@ -10,6 +11,7 @@ export const roboto = Roboto({
 });
 
 export const archivo = Archivo({
+  variable: "--archivo",
   subsets: ["latin"],
   display: "swap",
   weight: ["100", "400", "600", "700"], //  thin-italic, regular, semi-bold, bold,
@@ -26,9 +28,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  console.log(archivo);
   return (
     <html lang='en'>
-      <body className={`${roboto.className} ${archivo.className} pt-[84px]`}>
+      <body className={`${archivo.variable} ${roboto.variable} pt-[84px]`}>
         <Navbar />
         {children}
       </body>

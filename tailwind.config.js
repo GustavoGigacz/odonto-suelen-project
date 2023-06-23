@@ -6,6 +6,10 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      roboto: ["var(--roboto)"],
+      archivo: ["var(--archivo)"],
+    },
     extend: {
       colors: {
         background: "#ffffff",
