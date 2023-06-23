@@ -28,19 +28,19 @@ export default function Navbar() {
       <nav className='w-full fixed top-0 mb-8'>
         {/* navbar desktop */}
         <ul className='px-8 mobile:flex mobile:max-w-desktop mobile:mx-auto mobile:text-font1 mobile:text-2xl hidden font-roboto font-semibold'>
-          <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-foreground2 hover:border-b-4 hover:border-y-foreground transition-all'>
+          <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
             Home
           </li>
-          <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-foreground2 hover:border-b-4 hover:border-y-foreground transition-all'>
+          <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
             Depoimentos
           </li>
-          <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-foreground2 hover:border-b-4 hover:border-y-foreground transition-all'>
+          <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
             Serviços
           </li>
-          <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-foreground2 hover:border-b-4 hover:border-y-foreground transition-all'>
+          <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
             Localização
           </li>
-          <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-foreground2 hover:border-b-4 hover:border-y-foreground transition-all'>
+          <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
             Contato
           </li>
         </ul>
