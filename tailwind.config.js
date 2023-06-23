@@ -17,6 +17,11 @@ module.exports = {
       },
       maxWidth: {
         desktop: "1512px",
+        tablet: "720px",
+        mobile: "328px",
+      },
+      screens: {
+        mobile: "900px",
       },
     },
   },
