@@ -12,12 +12,13 @@ module.exports = {
     },
     extend: {
       colors: {
-        background: "#ffffff",
-        foreground: "#800020",
-        foreground2: "#FFE5EC",
-        primary: "#800121",
-        font1: "#132030",
-        font2: "#fff",
+        white: "#ffffff",
+        white2: "#FFE5EC",
+        red1: "#810222",
+        red2: "#800020",
+        red3: "#800121",
+        red4: "#943440",
+        blue1: "#132030",
       },
       maxWidth: {
         desktop: "1512px",
