@@ -48,7 +48,7 @@ export default function Navbar() {
 
         {/* navbar mobile */}
         <div className='px-8 flex items-center mx-auto justify-between mobile:hidden mt-9'>
-          <span className='text-2xl text-foreground font-bold cursor-pointer'>
+          <span className='text-2xl text-foreground font-bold cursor-pointer text-red2'>
             Suelen
           </span>
           <button onClick={toggleMenu}>
