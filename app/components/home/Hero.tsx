@@ -12,17 +12,17 @@ import ArrowIcon from "../shared/icons/ArrowIcon";
 export default function Hero() {
   return (
     <div
-      className='max-w-desktop mx-auto px-8 mobile:flex items-center justify-between mobile:mt-36 mt-14 mobile:mb-60 mb-12 gap-20'
+      className='max-w-desktop mx-auto px-8 desk:flex items-center justify-between desk:mt-36 mt-14 desk:mb-60 mb-12 gap-20'
       id='home'
     >
       <div className=''>
-        <p className='mobile:text-lg text-sm 	font-archivo italic font-thin	text-font1'>
+        <p className='desk:text-lg text-sm 	font-archivo italic font-thin	text-font1'>
           Suelen Budziak CRO/PR 33672
         </p>
-        <h1 className='mobile:text-5xl text-3xl max-w-xl font-bold font-roboto mb-5'>
+        <h1 className='desk:text-5xl text-3xl max-w-xl font-bold font-roboto mb-5'>
           Uma vida melhor começa com um lindo sorriso
         </h1>
-        <p className='font-archivo mobile:text-2xl text-sm max-w-3xl mobile:mb-10 my-10'>
+        <p className='font-archivo desk:text-2xl text-sm max-w-3xl desk:mb-10 my-10'>
           Venha conhecer nossa clinica e fazer uma avaliação gratuita e sem
           compromisso!
         </p>

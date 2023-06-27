@@ -25,9 +25,9 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className='w-full fixed top-0 mb-8'>
+      <nav className='w-full fixed top-0 mb-8 bg-white'>
         {/* navbar desktop */}
-        <ul className='px-8 mobile:flex mobile:max-w-desktop mobile:mx-auto mobile:text-font1 mobile:text-2xl hidden font-roboto font-semibold'>
+        <ul className='px-8 desk:flex desk:max-w-desktop desk:mx-auto desk:text-font1 desk:text-2xl hidden font-roboto font-semibold'>
           <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
             Home
           </li>
@@ -47,7 +47,7 @@ export default function Navbar() {
         {/* navbar desktop */}
 
         {/* navbar mobile */}
-        <div className='px-8 flex items-center mx-auto justify-between mobile:hidden mt-9'>
+        <div className='px-8 flex items-center mx-auto justify-between desk:hidden mt-9 mb-9'>
           <span className='text-2xl text-foreground font-bold cursor-pointer text-red2'>
             Suelen
           </span>
