@@ -8,7 +8,7 @@ import InvertedMarkIcon from "../shared/icons/InvertedMarkIcon";
 export default function CustomerReview() {
   return (
     <div className='flex customers:mb-60 mb-12 max-w-marks mx-auto'>
-      <div className='relative top-12 pl-8 hidden nomark:flex'>
+      <div className='relative top-14 pl-8 hidden nomark:flex'>
         <MarkIcon />
       </div>
       <div className='max-w-desktop mx-auto px-8 flex flex-col items-center '>
@@ -60,7 +60,7 @@ export default function CustomerReview() {
           </li>
         </ul>
       </div>
-      <div className='self-end relative top-12 pr-8 hidden nomark:flex'>
+      <div className='self-end relative top-10 pr-8 hidden nomark:flex'>
         <InvertedMarkIcon />
       </div>
     </div>
