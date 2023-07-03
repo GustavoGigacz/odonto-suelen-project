@@ -21,7 +21,7 @@ export default function Values() {
   return (
     <>
       <div className='max-w-desktop mx-auto px-8 flex screen3:flex-row flex-col-reverse items-center '>
-        <div className='grid grid-rows-2 screen3:mr-36'>
+        <div className='grid grid-rows-2 screen3:mr-36 screen3:relative screen3:top-20'>
           <div className='flex screen3:gap-5 gap-2 screen3:mb-5 mb-2 mt-9 screen3:w-full'>
             <Image
               src={FirstImage}
