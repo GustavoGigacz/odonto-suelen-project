@@ -25,7 +25,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className='w-full fixed top-0 mb-8 bg-white'>
+      <nav className='w-full fixed top-0 mb-8 bg-white z-[9999]'>
         {/* navbar desktop */}
         <ul className='px-8 desk:flex desk:max-w-desktop desk:mx-auto desk:text-font1 desk:text-2xl hidden font-roboto font-semibold'>
           <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
@@ -62,7 +62,7 @@ export default function Navbar() {
       <AnimatePresence>
         {mobileOpen ? (
           <motion.div
-            className='font-roboto font-bold fixed h-full w-full top-0 left-0 text-center bg-white flex flex-col'
+            className='font-roboto font-bold fixed h-full w-full top-0 left-0 text-center bg-white flex flex-col z-[9999]'
             initial={{
               opacity: 0,
             }}
