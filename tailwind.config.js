@@ -26,10 +26,14 @@ module.exports = {
         tablet: "720px",
         mobile: "328px",
       },
+      maxHeight: {
+        img: "376px",
+      },
       screens: {
         desk: "900px",
         customers: "1050px",
         screenMedian: "1250px",
+        screen3: "1330px",
         nomark: "1510px",
       },
       boxShadow: {

@@ -28,7 +28,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  console.log(archivo);
   return (
     <html lang='en'>
       <body className={`${archivo.variable} ${roboto.variable} pt-[84px]`}>
