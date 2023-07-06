@@ -20,7 +20,7 @@ import AttentionIcon from "../shared/icons/AttentionIcon";
 export default function Values() {
   return (
     <>
-      <div className='max-w-desktop mx-auto px-8 flex screen3:flex-row flex-col-reverse items-center '>
+      <div className='max-w-desktop mx-auto px-8 flex screen3:flex-row flex-col-reverse items-center screen3:mb-36 '>
         <div className='grid grid-rows-2 screen3:mr-36 screen3:relative screen3:top-20 z-0'>
           <div className='flex screen3:gap-5 gap-2 screen3:mb-5 mb-2 mt-9 screen3:w-full'>
             <Image
@@ -46,13 +46,13 @@ export default function Values() {
           <h3 className='text-blue1 screen3:text-5xl text-3xl font-roboto font-bold mb-10'>
             Valores que nos guiam
           </h3>
-          <ul className='grid screen3:grid-cols-2 gap-5'>
-            <li className='grid gap-y-6 bg-red2 rounded-xl pt-4  screen3:pr-32 pr-20 pb-12 pl-5 text-white font-archivo screen3:text-2xl text-xl font-bold'>
+          <ul className='grid screen4:grid-cols-2 gap-5 '>
+            <li className='grid gap-y-6 bg-red2  rounded-xl pt-4  screen3:pr-32 pr-20 pb-12 pl-5 text-white font-archivo screen3:text-2xl text-xl font-bold'>
               <ExcellenceIcon />
               <p>Exelência</p>
             </li>
 
-            <li className='grid gap-y-6 bg-red2 rounded-xl pt-4  screen3:pr-32 pr-20 pb-12 pl-5 text-white font-archivo screen3:text-2xl text-xl font-bold'>
+            <li className='grid gap-y-6 bg-red2  rounded-xl pt-4  screen3:pr-32 pr-20 pb-12 pl-5 text-white font-archivo screen3:text-2xl text-xl font-bold'>
               <TransparencyIcon />
               <p>Transparência</p>
             </li>
