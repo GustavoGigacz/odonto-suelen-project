@@ -30,10 +30,12 @@ module.exports = {
         img: "376px",
       },
       screens: {
+        cards: "320px",
         desk: "900px",
         customers: "1050px",
         screenMedian: "1250px",
         screen3: "1330px",
+        screen4: "630px",
         nomark: "1510px",
       },
       boxShadow: {
