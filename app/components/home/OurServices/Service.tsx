@@ -45,7 +45,7 @@ export default function Service({
               {/* <li></li> */}
             </ul>
           </div>
-          <div>
+          <div className='max-w-[665px]'>
             <Image src={image} alt={""} />
           </div>
         </div>
