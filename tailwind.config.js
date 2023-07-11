@@ -19,6 +19,7 @@ module.exports = {
         red3: "#800121",
         red4: "#943440",
         blue1: "#132030",
+        black1: "#0D1520;",
       },
       maxWidth: {
         desktop: "1512px",
