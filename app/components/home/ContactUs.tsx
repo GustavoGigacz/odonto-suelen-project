@@ -85,7 +85,7 @@ export default function ContactUs() {
             />
           </div>
           <div className=' outline-2 outline-black1 outline rounded-[10px] py-4 pl-7 pr-5'>
-            <textarea className='border-none outline-none text-2xl w-[800px]'></textarea>
+            <textarea className='border-none outline-none text-2xl w-full'></textarea>
           </div>
           <div>
             <button className='bg-red2 screen4:py-3 screen4:px-6 py-2 px-4 rounded-border text-white screen4:text-2xl text-sm font-roboto font-bold'>
