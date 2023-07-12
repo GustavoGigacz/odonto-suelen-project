@@ -1,5 +1,6 @@
 import ContactUs from "./components/home/ContactUs";
 import CustomerReview from "./components/home/CustomersReviews";
+import FaqPage from "./components/home/Faq";
 import Hero from "./components/home/Hero";
 import Maps from "./components/home/Maps";
 import OurAttendment from "./components/home/OurAttendment";
@@ -16,6 +17,7 @@ export default function Home() {
       <OurAttendment />
       <Maps />
       <ContactUs />
+      <FaqPage />
     </main>
   );
 }
