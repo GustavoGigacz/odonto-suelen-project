@@ -1,3 +1,4 @@
+import Footer from "./components/shared/Footer/Footer";
 import Navbar from "./components/shared/Navbar/Navbar";
 import "./globals.css";
 import { Archivo, Roboto } from "next/font/google";
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body className={`${archivo.variable} ${roboto.variable} pt-[84px]`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
