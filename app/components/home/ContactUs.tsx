@@ -88,7 +88,7 @@ export default function ContactUs() {
             <textarea className='border-none outline-none text-2xl w-full'></textarea>
           </div>
           <div>
-            <button className='bg-red2 screen4:py-3 screen4:px-6 py-2 px-4 rounded-border text-white screen4:text-2xl text-sm font-roboto font-bold'>
+            <button className='bg-red2 screen4:py-3 screen4:px-6 py-2 px-4 rounded-[10px] text-white screen4:text-2xl text-sm font-roboto font-bold'>
               Enviar Mensagem
             </button>
           </div>
