@@ -4,7 +4,7 @@ interface ServiceProps {
   title: string;
   upperTitle: string;
   paragraph: string;
-  // list: string;
+  lis?: JSX.Element[];
   image: StaticImageData;
   reversed?: boolean;
 }
@@ -13,7 +13,7 @@ export default function Service({
   title,
   upperTitle,
   paragraph,
-  // list,
+  lis,
   image,
   reversed = false,
 }: ServiceProps) {
@@ -44,9 +44,13 @@ export default function Service({
               <p className='screen3:text-xl text-sm font-archivo'>
                 {paragraph}
               </p>
-              <ul className='screen3:text-xl text-sm font-archivo list-disc pl-5 mt-2'>
-                {/* <li></li> */}
-              </ul>
+              {lis ? (
+                <ul className='screen3:text-xl text-sm font-archivo list-disc pl-5 mt-2'>
+                  {lis.map((li, key) => (
+                    <li key={`${key}_${li}`}>{li}</li>
+                  ))}
+                </ul>
+              ) : null}
             </div>
             <div className='max-w-[665px]'>
               <Image src={image} alt={''} />
