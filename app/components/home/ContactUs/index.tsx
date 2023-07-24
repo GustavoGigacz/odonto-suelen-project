@@ -8,8 +8,8 @@ import LinkedinIcon from '../../shared/icons/LinkedinIcon';
 import TwitterIcon from '../../shared/icons/TwitterIcon';
 import UserIcon from '../../shared/icons/UserIcon';
 import PhoneIcon from '../../shared/icons/PhoneIcon';
-import MessangeIcon from '../../shared/icons/MessangeIcon';
 import Input from './Input';
+import TextArea from './TextArea';
 
 export default function ContactUs() {
   const [form, setForm] = useState({
@@ -94,9 +94,14 @@ export default function ContactUs() {
               setForm((prev) => ({ ...prev, telefone: value }));
             }}
           />
-          <div className=' outline-2 outline-black1 outline rounded-[10px] py-4 pl-7 pr-5'>
-            <textarea className='border-none outline-none text-2xl w-full'></textarea>
-          </div>
+          <TextArea
+            label='Mensagem'
+            name='mensagem'
+            value={form.mensagem}
+            setValue={(value) => {
+              setForm((prev) => ({ ...prev, mensagem: value }));
+            }}
+          />
           <div>
             <button className='bg-red2 screen4:py-3 screen4:px-6 py-2 px-4 rounded-[10px] text-white screen4:text-2xl text-sm font-roboto font-bold'>
               Enviar Mensagem
