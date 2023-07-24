@@ -1,18 +1,18 @@
-"use client";
+'use client';
 
 /// library
-import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
-import Link from "next/link";
+import { AnimatePresence, motion } from 'framer-motion';
+import { useState } from 'react';
+import Link from 'next/link';
 /// library
 
 /// icons
-import BurguerIcon from "../icons/BurguerIcon";
-import InstagramIcon from "../icons/InstagramIcon";
-import FacebookIcon from "../icons/FacebookIcon";
-import TwitterIcon from "../icons/TwitterIcon";
-import LinkedinIcon from "../icons/LinkedinIcon";
-import CloseIcon from "../icons/CloseIcon";
+import BurguerIcon from '../icons/BurguerIcon';
+import InstagramIcon from '../icons/InstagramIcon';
+import FacebookIcon from '../icons/FacebookIcon';
+import TwitterIcon from '../icons/TwitterIcon';
+import LinkedinIcon from '../icons/LinkedinIcon';
+import CloseIcon from '../icons/CloseIcon';
 /// icons
 
 ///////////////Code///////////////Code///////////////Code
@@ -28,27 +28,27 @@ export default function Navbar() {
       <nav className='w-full fixed top-0 mb-8 bg-white z-[9999]'>
         {/* navbar desktop */}
         <ul className='px-8 desk:flex desk:max-w-desktop desk:mx-auto desk:text-font1 desk:text-2xl hidden font-roboto font-semibold'>
-          <Link href={"#home"} scroll={false}>
+          <Link href={'#home'} scroll={false}>
             <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
               Home
             </li>
           </Link>
-          <Link href={"#review"} scroll={false}>
+          <Link href={'#review'} scroll={false}>
             <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
               Depoimentos
             </li>
           </Link>
-          <Link href={""}>
+          <Link href={'#servicos'}>
             <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
               Serviços
             </li>
           </Link>
-          <Link href={""}>
+          <Link href={'#mapa'}>
             <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
               Localização
             </li>
           </Link>
-          <Link href={""}>
+          <Link href={'#contato'}>
             <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
               Contato
             </li>
@@ -107,7 +107,7 @@ export default function Navbar() {
                     delay: 0.16,
                   }}
                 >
-                  <Link href={"#"}>Home</Link>
+                  <Link href={'#'}>Home</Link>
                 </motion.li>
                 <motion.li
                   initial={{
@@ -122,7 +122,7 @@ export default function Navbar() {
                     delay: 0.22,
                   }}
                 >
-                  <Link href={"#"}>Contato</Link>
+                  <Link href={'#'}>Contato</Link>
                 </motion.li>
                 <motion.li
                   initial={{
@@ -137,7 +137,7 @@ export default function Navbar() {
                     delay: 0.28,
                   }}
                 >
-                  <Link href={"#"}>Serviços</Link>
+                  <Link href={'#'}>Serviços</Link>
                 </motion.li>
                 <motion.li
                   initial={{
@@ -152,7 +152,7 @@ export default function Navbar() {
                     delay: 0.34,
                   }}
                 >
-                  <Link href={"#"}>Localização</Link>
+                  <Link href={'#'}>Localização</Link>
                 </motion.li>
                 <motion.li
                   initial={{
@@ -167,7 +167,7 @@ export default function Navbar() {
                     delay: 0.4,
                   }}
                 >
-                  <Link href={"#"}>Depoimentos</Link>
+                  <Link href={'#'}>Depoimentos</Link>
                 </motion.li>
               </ul>
               <ul className='flex gap-4 pt-8 justify-center'>
@@ -184,7 +184,7 @@ export default function Navbar() {
                     delay: 0.48,
                   }}
                 >
-                  <Link href={"#"}>
+                  <Link href={'#'}>
                     <InstagramIcon />
                   </Link>
                 </motion.li>
@@ -201,7 +201,7 @@ export default function Navbar() {
                     delay: 0.48,
                   }}
                 >
-                  <Link href={"#"}>
+                  <Link href={'#'}>
                     <FacebookIcon />
                   </Link>
                 </motion.li>
@@ -218,7 +218,7 @@ export default function Navbar() {
                     delay: 0.48,
                   }}
                 >
-                  <Link href={"#"}>
+                  <Link href={'#'}>
                     <TwitterIcon />
                   </Link>
                 </motion.li>
@@ -235,7 +235,7 @@ export default function Navbar() {
                     delay: 0.48,
                   }}
                 >
-                  <Link href={"#"}>
+                  <Link href={'#'}>
                     <LinkedinIcon />
                   </Link>
                 </motion.li>

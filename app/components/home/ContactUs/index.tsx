@@ -89,8 +89,11 @@ export default function ContactUs() {
   };
 
   return (
-    <div className='w-full max-w-desktop px-8 mx-auto flex screen3:flex-row flex-col justify-between screen3:mb-60 mb-12'>
-      <div className=' text-blue1 mb-12'>
+    <div
+      className='w-full max-w-desktop px-8 mx-auto flex screen3:flex-row flex-col justify-between screen3:mb-60 mb-12 pt-[100px] -mt-[100px]'
+      id='contato'
+    >
+      <div className='text-blue1 mb-12'>
         <h3 className='screen4:text-5xl text-3xl font-roboto font-bold max-w-[463px] mb-12 '>
           Entre em Contato Conosco
         </h3>

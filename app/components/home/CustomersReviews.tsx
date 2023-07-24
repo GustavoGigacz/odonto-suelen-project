@@ -1,13 +1,16 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import DaveImage from "@/public/images/DaveImage.png";
-import MarkIcon from "../shared/icons/MarkIcon";
-import InvertedMarkIcon from "../shared/icons/InvertedMarkIcon";
+import DaveImage from '@/public/images/DaveImage.png';
+import MarkIcon from '../shared/icons/MarkIcon';
+import InvertedMarkIcon from '../shared/icons/InvertedMarkIcon';
 
 ///////Code
 export default function CustomerReview() {
   return (
-    <div className='flex customers:mb-60 mb-12 max-w-marks mx-auto' id='review'>
+    <div
+      className='flex customers:mb-60 mb-12 max-w-marks mx-auto pt-[100px] -mt-[100px]'
+      id='review'
+    >
       <div className='relative top-14 pl-8 hidden nomark:flex'>
         <MarkIcon />
       </div>
@@ -18,7 +21,7 @@ export default function CustomerReview() {
         <ul className='customers:flex grid gap-10 gap-y-4'>
           <li className='customers:px-12 customers:py-8 py-7 px-5 shadow-box bg-white rounded-[10px]'>
             <div className='flex items-center gap-7 mb-5'>
-              <Image src={DaveImage} alt={"ProfileImage"} />
+              <Image src={DaveImage} alt={'ProfileImage'} />
               <h3 className='text-blue1 screenMedian:text-2xl text-xl font-archivo font-bold'>
                 Dave Adams
               </h3>
@@ -32,7 +35,7 @@ export default function CustomerReview() {
           </li>
           <li className='customers:px-12 customers:py-8 py-7 px-5 shadow-box bg-white rounded-[10px]'>
             <div className='flex items-center gap-7 mb-5'>
-              <Image src={DaveImage} alt={"ProfileImage"} />
+              <Image src={DaveImage} alt={'ProfileImage'} />
               <h3 className='text-blue1 screenMedian:text-2xl text-xl font-archivo font-bold'>
                 Dave Adams
               </h3>
@@ -46,7 +49,7 @@ export default function CustomerReview() {
           </li>
           <li className='customers:px-12 customers:py-8 py-7 px-5 shadow-box bg-white rounded-[10px]'>
             <div className='flex items-center gap-7 mb-5'>
-              <Image src={DaveImage} alt={"ProfileImage"} />
+              <Image src={DaveImage} alt={'ProfileImage'} />
               <h3 className='text-blue1 screenMedian:text-2xl text-xl font-archivo font-bold'>
                 Dave Adams
               </h3>
