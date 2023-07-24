@@ -12,8 +12,8 @@ import ArrowIcon from "../shared/icons/ArrowIcon";
 export default function Hero() {
   return (
     <div
-      className='max-w-desktop mx-auto px-8 desk:flex items-center justify-between desk:mt-36 mt-14 desk:mb-60 mb-12 gap-20'
       id='home'
+      className='max-w-desktop mx-auto px-8 desk:flex items-center justify-between desk:mt-36 mt-14 desk:mb-60 mb-12 gap-20'
     >
       <div className=''>
         <p className='desk:text-lg text-sm 	font-archivo italic font-thin	text-font1'>

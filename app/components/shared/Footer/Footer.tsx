@@ -5,12 +5,12 @@ export default function Footer() {
   return (
     <>
       <div className='w-full bg-red2 pt-11'>
-        <div className='flex justify-between items-center max-w-desktop mx-0 px-8'>
-          <div className='text-white text-xl font-roboto font-bold '>
+        <div className='flex screen5:flex-row flex-col-reverse justify-between items-center max-w-desktop mx-0 px-8'>
+          <div className='text-white text-xl font-roboto font-bold screen5:mt-0 mt-9'>
             <h3>Suelen Budziak</h3>
           </div>
-          <div>
-            <ul className='flex gap-10 text-white text-xl font-roboto font-medium'>
+          <div className='flex gap-10'>
+            <ul className='flex fscreen:flex-row flex-col gap-10 text-white text-xl font-roboto font-medium'>
               <li className='cursor-pointer p-1 -m-1'>
                 <Link href={"#"}>Home</Link>
               </li>
@@ -20,6 +20,8 @@ export default function Footer() {
               <li className='cursor-pointer p-1 -m-1'>
                 <Link href={"#"}>Serviços</Link>
               </li>
+            </ul>
+            <ul className='flex fscreen:flex-row flex-col gap-10 text-white text-xl font-roboto font-medium'>
               <li className='cursor-pointer p-1 -m-1'>
                 <Link href={"#"}>Localização</Link>
               </li>

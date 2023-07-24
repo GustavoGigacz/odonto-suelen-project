@@ -28,21 +28,31 @@ export default function Navbar() {
       <nav className='w-full fixed top-0 mb-8 bg-white z-[9999]'>
         {/* navbar desktop */}
         <ul className='px-8 desk:flex desk:max-w-desktop desk:mx-auto desk:text-font1 desk:text-2xl hidden font-roboto font-semibold'>
-          <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
-            Home
-          </li>
-          <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
-            Depoimentos
-          </li>
-          <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
-            Serviços
-          </li>
-          <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
-            Localização
-          </li>
-          <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
-            Contato
-          </li>
+          <Link href={"#home"} scroll={false}>
+            <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
+              Home
+            </li>
+          </Link>
+          <Link href={"#review"} scroll={false}>
+            <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
+              Depoimentos
+            </li>
+          </Link>
+          <Link href={""}>
+            <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
+              Serviços
+            </li>
+          </Link>
+          <Link href={""}>
+            <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
+              Localização
+            </li>
+          </Link>
+          <Link href={""}>
+            <li className='cursor-pointer px-8 py-6 border-b-4 border-b-transparent hover:bg-white2 hover:border-b-4 hover:border-y-red2 transition-all'>
+              Contato
+            </li>
+          </Link>
         </ul>
         {/* navbar desktop */}
 
