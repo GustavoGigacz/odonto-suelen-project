@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { FormEventHandler, useState } from 'react';
 import Link from 'next/link';
 import InstagramIcon from '../../shared/icons/InstagramIcon';
 import FacebookIcon from '../../shared/icons/FacebookIcon';
@@ -10,6 +10,7 @@ import UserIcon from '../../shared/icons/UserIcon';
 import PhoneIcon from '../../shared/icons/PhoneIcon';
 import Input from './Input';
 import TextArea from './TextArea';
+import axios from 'axios';
 
 export default function ContactUs() {
   const [form, setForm] = useState({
@@ -17,6 +18,75 @@ export default function ContactUs() {
     telefone: '',
     mensagem: '',
   });
+
+  const [loading, setLoading] = useState(false);
+  const [feedback, setFeedback] = useState({
+    success: '',
+    error: '',
+  });
+
+  const handleSubmit: FormEventHandler<HTMLFormElement> = (e) => {
+    e.preventDefault();
+
+    setFeedback({
+      error: ``,
+      success: '',
+    });
+
+    if (loading) {
+      return;
+    }
+
+    if (form.telefone.length <= 1) {
+      setFeedback({
+        error: `O telefone é um campo obrigatório para você entrar em contato`,
+        success: '',
+      });
+      setLoading(false);
+      return;
+    }
+
+    if (form.mensagem.length <= 1) {
+      setFeedback({
+        error: `Erro - mensagem vazia`,
+        success: '',
+      });
+      setLoading(false);
+      return;
+    }
+
+    setLoading(true);
+
+    const formData = new FormData();
+
+    formData.append('form-name', 'contato');
+    formData.append('Nome', form.nome);
+    formData.append('Telefone', form.telefone);
+    formData.append('Mensagem', form.mensagem);
+
+    axios({
+      method: 'post',
+      url: '/',
+      data: formData,
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    })
+      .then(() =>
+        setFeedback({
+          error: '',
+          success:
+            'Mensagem enviada com sucesso! Obrigado por entrar em contato.',
+        })
+      )
+      .catch((error) => {
+        setFeedback({
+          error: `Algo de errado ocorreu, por favor entre em contato por email`,
+          success: '',
+        });
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  };
 
   return (
     <div className='w-full max-w-desktop px-8 mx-auto flex screen3:flex-row flex-col justify-between screen3:mb-60 mb-12'>
@@ -75,7 +145,14 @@ export default function ContactUs() {
         </ul>
       </div>
       <div>
-        <form action='' className='flex flex-col screeb4:gap-6 gap-[10px] '>
+        <form
+          action=''
+          className='flex flex-col screeb4:gap-6 gap-[10px]'
+          name='contato'
+          data-netlify='true'
+          onSubmit={handleSubmit}
+        >
+          <input type='hidden' name='form-name' value='contato' />
           <Input
             Icon={UserIcon}
             label='Nome Completo'
@@ -102,9 +179,16 @@ export default function ContactUs() {
               setForm((prev) => ({ ...prev, mensagem: value }));
             }}
           />
+          <span
+            className={
+              feedback.success ? 'text-blue1 font-bold' : 'text-red2 font-bold'
+            }
+          >
+            {feedback.success || feedback.error}
+          </span>
           <div>
             <button className='bg-red2 screen4:py-3 screen4:px-6 py-2 px-4 rounded-[10px] text-white screen4:text-2xl text-sm font-roboto font-bold'>
-              Enviar Mensagem
+              {loading ? 'Carregando...' : 'Enviar Mensagem'}
             </button>
           </div>
         </form>
