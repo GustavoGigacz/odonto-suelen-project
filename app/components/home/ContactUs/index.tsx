@@ -1,28 +1,28 @@
-'use client';
+"use client";
 
-import { FormEventHandler, useState } from 'react';
-import Link from 'next/link';
-import InstagramIcon from '../../shared/icons/InstagramIcon';
-import FacebookIcon from '../../shared/icons/FacebookIcon';
-import LinkedinIcon from '../../shared/icons/LinkedinIcon';
-import TwitterIcon from '../../shared/icons/TwitterIcon';
-import UserIcon from '../../shared/icons/UserIcon';
-import PhoneIcon from '../../shared/icons/PhoneIcon';
-import Input from './Input';
-import TextArea from './TextArea';
-import axios from 'axios';
+import { FormEventHandler, useState } from "react";
+import Link from "next/link";
+import InstagramIcon from "../../shared/icons/InstagramIcon";
+import FacebookIcon from "../../shared/icons/FacebookIcon";
+import LinkedinIcon from "../../shared/icons/LinkedinIcon";
+import TwitterIcon from "../../shared/icons/TwitterIcon";
+import UserIcon from "../../shared/icons/UserIcon";
+import PhoneIcon from "../../shared/icons/PhoneIcon";
+import Input from "./Input";
+import TextArea from "./TextArea";
+import axios from "axios";
 
 export default function ContactUs() {
   const [form, setForm] = useState({
-    nome: '',
-    telefone: '',
-    mensagem: '',
+    nome: "",
+    telefone: "",
+    mensagem: "",
   });
 
   const [loading, setLoading] = useState(false);
   const [feedback, setFeedback] = useState({
-    success: '',
-    error: '',
+    success: "",
+    error: "",
   });
 
   const handleSubmit: FormEventHandler<HTMLFormElement> = (e) => {
@@ -30,7 +30,7 @@ export default function ContactUs() {
 
     setFeedback({
       error: ``,
-      success: '',
+      success: "",
     });
 
     if (loading) {
@@ -40,7 +40,7 @@ export default function ContactUs() {
     if (form.telefone.length <= 1) {
       setFeedback({
         error: `O telefone é um campo obrigatório para você entrar em contato`,
-        success: '',
+        success: "",
       });
       setLoading(false);
       return;
@@ -49,7 +49,7 @@ export default function ContactUs() {
     if (form.mensagem.length <= 1) {
       setFeedback({
         error: `Erro - mensagem vazia`,
-        success: '',
+        success: "",
       });
       setLoading(false);
       return;
@@ -59,28 +59,28 @@ export default function ContactUs() {
 
     const formData = new FormData();
 
-    formData.append('form-name', 'contato');
-    formData.append('Nome', form.nome);
-    formData.append('Telefone', form.telefone);
-    formData.append('Mensagem', form.mensagem);
+    formData.append("form-name", "contato");
+    formData.append("Nome", form.nome);
+    formData.append("Telefone", form.telefone);
+    formData.append("Mensagem", form.mensagem);
 
     axios({
-      method: 'post',
-      url: '/',
+      method: "post",
+      url: "/",
       data: formData,
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
     })
       .then(() =>
         setFeedback({
-          error: '',
+          error: "",
           success:
-            'Mensagem enviada com sucesso! Obrigado por entrar em contato.',
+            "Mensagem enviada com sucesso! Obrigado por entrar em contato.",
         })
       )
       .catch((error) => {
         setFeedback({
           error: `Algo de errado ocorreu, por favor entre em contato por email`,
-          success: '',
+          success: "",
         });
       })
       .finally(() => {
@@ -110,7 +110,7 @@ export default function ContactUs() {
             <span className='font-roboto font-bold screen4:text-3xl text-xl'>
               Email
             </span>
-            <Link href={'#'} className='font-archivo screen4:text-2xl text-sm'>
+            <Link href={"#"} className='font-archivo screen4:text-2xl text-sm'>
               drasuelen@gmail.com
             </Link>
           </li>
@@ -126,11 +126,11 @@ export default function ContactUs() {
         </ul>
         <ul className='flex gap-6'>
           <li>
-            <Link href={'#'}>
+            <Link href={"#"}>
               <InstagramIcon />
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href={'#'}>
               <FacebookIcon />
             </Link>
@@ -144,7 +144,7 @@ export default function ContactUs() {
             <Link href={'#'}>
               <LinkedinIcon />
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div>
@@ -184,14 +184,14 @@ export default function ContactUs() {
           />
           <span
             className={
-              feedback.success ? 'text-blue1 font-bold' : 'text-red2 font-bold'
+              feedback.success ? "text-blue1 font-bold" : "text-red2 font-bold"
             }
           >
             {feedback.success || feedback.error}
           </span>
           <div>
             <button className='bg-red2 screen4:py-3 screen4:px-6 py-2 px-4 rounded-[10px] text-white screen4:text-2xl text-sm font-roboto font-bold'>
-              {loading ? 'Carregando...' : 'Enviar Mensagem'}
+              {loading ? "Carregando..." : "Enviar Mensagem"}
             </button>
           </div>
         </form>

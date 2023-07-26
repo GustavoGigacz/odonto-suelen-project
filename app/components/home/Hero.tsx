@@ -1,11 +1,11 @@
 //////Library
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 //////Library
 
 //////icons
-import SuelenImage from '@/public/images/ImageSuelenImage.png';
-import ArrowIcon from '../shared/icons/ArrowIcon';
+import SuelenImage from "@/public/images/ImageSuelenImage.png";
+import ArrowIcon from "../shared/icons/ArrowIcon";
 //////icons
 
 ///////////////Code
@@ -26,14 +26,14 @@ export default function Hero() {
           Venha conhecer nossa clinica e fazer uma avaliação gratuita e sem
           compromisso!
         </p>
-        <Link href={'#'}>
+        <Link href={"#contato"}>
           <button className='font-roboto font-black bg-red1 flex items-center gap-3 text-white px-6 py-3 rounded-[10px] hover:bg-red4 transition-all mb-6'>
             Entre em Contato <ArrowIcon />
           </button>
         </Link>
       </div>
       <div className='grid justify-center'>
-        <Image src={SuelenImage} alt={'Suelen Image'} />
+        <Image src={SuelenImage} alt={"Suelen Image"} />
       </div>
     </div>
   );

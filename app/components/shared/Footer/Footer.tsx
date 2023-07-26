@@ -12,21 +12,21 @@ export default function Footer() {
           <div className='flex gap-10'>
             <ul className='flex fscreen:flex-row flex-col gap-10 text-white text-xl font-roboto font-medium'>
               <li className='cursor-pointer p-1 -m-1'>
-                <Link href={"#"}>Home</Link>
+                <Link href={"#home"}>Home</Link>
               </li>
               <li className='cursor-pointer p-1 -m-1'>
-                <Link href={"#"}>Depoimentos</Link>
+                <Link href={"#review"}>Depoimentos</Link>
               </li>
               <li className='cursor-pointer p-1 -m-1'>
-                <Link href={"#"}>Serviços</Link>
+                <Link href={"#servicos"}>Serviços</Link>
               </li>
             </ul>
             <ul className='flex fscreen:flex-row flex-col gap-10 text-white text-xl font-roboto font-medium'>
               <li className='cursor-pointer p-1 -m-1'>
-                <Link href={"#"}>Localização</Link>
+                <Link href={"#mapa"}>Localização</Link>
               </li>
               <li className='cursor-pointer p-1 -m-1'>
-                <Link href={"#"}>Contato</Link>
+                <Link href={"#contato"}>Contato</Link>
               </li>
             </ul>
           </div>

@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { motion } from "framer-motion";
+import { useState } from "react";
 
 interface InputProps {
   label: string;
@@ -18,13 +18,13 @@ export default function Input({ label, name, value, setValue }: InputProps) {
         initial={{
           x: 0,
           y: 0,
-          fontSize: '24px',
-          color: 'var(--text-2)',
+          fontSize: "24px",
+          color: "var(--text-2)",
         }}
         animate={{
           y: focused || value ? -21 : 0,
-          fontSize: focused || value ? '16px' : '24px',
-          color: focused || value ? 'var(--accent-cyan)' : 'var(--text-2)',
+          fontSize: focused || value ? "16px" : "24px",
+          color: focused || value ? "var(--accent-cyan)" : "var(--text-2)",
         }}
         htmlFor={name}
       >
@@ -36,7 +36,7 @@ export default function Input({ label, name, value, setValue }: InputProps) {
         }}
         name={name}
         value={value}
-        className='text-2xl outline-2 outline-black1 outline rounded-[10px] pb-3 pt-5 pl-7 pr-4 w-[879px]'
+        className='text-2xl outline-2 outline-black1 outline rounded-[10px] pb-3 pt-5 pl-7 pr-4 max-w-[879px]'
         onFocus={() => {
           setFocused(true);
         }}

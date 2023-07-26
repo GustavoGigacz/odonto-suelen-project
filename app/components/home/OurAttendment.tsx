@@ -6,7 +6,7 @@ import ThoothIcon from "../shared/icons/ThoothIcon";
 
 export default function OurAttendment() {
   return (
-    <div className='customers:mb-60 mb-12 max-w-desktop mx-auto px-8 mt-60'>
+    <div className='customers:mb-60 mb-28 max-w-desktop mx-auto px-8 mt-60'>
       <h2 className='text-center text-blue1 text-5xl font-roboto font-bold mb-10'>
         Como é ser nosso cliente?
       </h2>
